@@ -1,4 +1,4 @@
-##                 Page with Rainbow Six gameplay videos :gun: :video_game:
+##                 Page with Rainbow Six gameplay videos  :gun: :video_game:
 
 #####                                                               Learning and Practicing:
 
