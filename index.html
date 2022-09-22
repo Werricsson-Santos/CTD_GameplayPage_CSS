@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
   <title>R6 WrN's Gameplay</title>
 </head>
 
@@ -14,6 +17,11 @@
     <header class="header">
         <img src="./Images/Icon.png" alt="logo-header" class="logoNavBar">
         <div class="headerBtnGroup">
+          <button id="show-aside">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
           <button class="navBtn">Login</button>
           <button class="navBtn">Register</button>
           <button class="navBtn">FAQ</button>
@@ -32,7 +40,7 @@
                 </iframe>
             </div>
             <div class="categoryVideo">
-                <iframe src="https://www.youtube.com/embed/xfdAxCuZxpU" width="500" height="375px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="mainVideo" class="mainVideo">
+                <iframe src="https://www.youtube.com/embed/xfdAxCuZxpU" width="500px" height="375px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="mainVideo" class="mainVideo">
                 </iframe>
             </div>
             <div class="categoryVideo">
@@ -60,9 +68,9 @@
                 </iframe>
             </div>
         </div>
-        <div class="sidebarContent">
+        <div class="sidebarContent" id="aside-menu">
             <div class="sidebarTitle">
-                <p class="friendsTitle">Friends</p>
+                <p class="friendsTitle" id="show-aside">Friends</p>
             </div>
             <div class="sidebarCard">
                 <img src="./Images/Wallace.jpg" alt="sidebarCardImg" class="sidebarCardImg">
@@ -107,10 +115,14 @@
         </div>  
     </section>
     <footer class="footer">
-        <img src="./Images/me.jpg" alt="logo-footer" class="logoFooter">
+        <div class="boxLogoFooter">
+            <p>Designed by <span>WrN</span></p>
+            <img src="./Images/me.jpg" alt="logo-footer" class="logoFooter">
+        </div>
         <a href="#backToTop" class="footerAnchor">Back to Top.</a>
     </footer>
-  </div>    
+  </div> 
+  <script src="script.js"></script>
 </body>
 
 </html>
