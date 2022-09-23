@@ -161,9 +161,60 @@
 span {
     color: black;
 }
+@media(max-width: 1410px){
+    .gridContainer{
+        grid-template-areas: 
+        "mainContent"
+        "sidebarContent";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .categoryVideo iframe {
+        width: 50vh;
+        height: 40vh;
+    }
+    .footerAnchor{
+        margin-right: 0vh;
+    }
+}
+
+@media(max-width: 700px){
+    .categoryVideo iframe {
+        width: 30vh;
+        height: 15vh;
+    }
+}
+
+@media(max-width: 700px){
+    .categoryVideo iframe {
+        width: 280px;
+    }
+}
+
 @media(max-width: 320px){
     .container{
         background-size: 100%;
+        background-repeat: repeat;
+    }
+    .mainContent{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .categoryVideo iframe {
+        width: 280px;
+    }
+    .sidebarContent{
+        display: none;
     }
     .logoNavBar {
         display: none;
