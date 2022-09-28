@@ -8,7 +8,6 @@
 
 - ###### Responsive design
 
+### Page Link:
 
-
-
-
+### https://werricsson.github.io/CTD_GameplayPage_CSS/
